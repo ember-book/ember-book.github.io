@@ -5,8 +5,14 @@
 "use strict";
 
 $(document).ready(function() {
-	
 
+	$('.email-button').click(function(e) {
+		e.preventDefault()
+		var email = $('.email-input').val()
+		var url = "https://emberjs-email-sender.herokuapp.com/send_email?email=" + email;
+		$.post(url, function() { });
+		$('.email-button').text("Sent! Check your inbox.");
+	});
 
 	// Input placeholder fallback
 	$('input, textarea').placeholder();
@@ -67,11 +73,11 @@ $(document).ready(function() {
 			e.preventDefault();
 		}
 
-		
+
 		$('html, body').stop().animate({ scrollTop: offsetTop }, 800);
 	});
 
-	
+
 	$(window).scroll( function() {
 
 		// Change .active menu item on scroll
@@ -114,10 +120,10 @@ $(document).ready(function() {
 		$(this).toggleClass('open');
 		$('#menu').slideToggle(400);
 	});
-	
+
 	/*------------------
 	End Header */
-	
+
 
 	/* Footer
 	------------------*/
