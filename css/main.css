@@ -1331,6 +1331,13 @@ p.point {
     background-repeat: no-repeat;
 }
 
+.photo-toye {
+  background: url('../images/toye.png');
+    background-position-x: 0px;
+    background-size: 101%;
+    background-repeat: no-repeat;
+}
+
 .photo-blaz {
   background: url('../images/blaz.png');
     background-position-x: 0px;
