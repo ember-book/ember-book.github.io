@@ -911,6 +911,9 @@ img {
   margin: 20px 50px 20px 0;
   padding-bottom: 50px;
 }
+.purchase-button {
+  font-size: 1.4em;
+}
 .purchase .price-table:last-child {
   margin-right: 0;
 }
@@ -1273,7 +1276,7 @@ p.point {
 }
 
 .quote {
-  background: #ebf3f5;
+  background: blanchedalmond;
   padding: 15px 20px 5px 15px;
   border-radius: 5px;
   margin-bottom: 30px;
@@ -1281,7 +1284,7 @@ p.point {
 }
 
 .quote p {
-  font-size: 13px;
+  font-size: 15px;
   margin-bottom: 0;
 }
 
@@ -1291,7 +1294,7 @@ p.point {
   height: 0px;
   border-style: solid;
   border-width: 20px 18px 0 18px;
-  border-color: #ebf3f5 transparent transparent transparent;
+  border-color: blanchedalmond transparent transparent transparent;
   position: relative;
   top: 37px;
   left: 20px;
