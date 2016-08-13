@@ -9,9 +9,11 @@ $(document).ready(function() {
 	$('.email-button').click(function(e) {
 		e.preventDefault()
 		var email = $('.email-input').val()
-		var url = "https://emberjs-email-sender.herokuapp.com/send_email?email=" + email;
-		$.post(url, function() { });
-		$('.email-button').text("Sent! Check your inbox.");
+		var url = "https://emberjs-email-sender.herokuapp.com/handle_email?email=" + email + "&from_site=emberjs-book";
+		$('.email-button').text("Sending...");
+		$.post(url, function() {
+			$('.email-button').text("Sent! Check your inbox.");
+		});
 	});
 
 	// Input placeholder fallback
