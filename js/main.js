@@ -8,7 +8,13 @@ $(document).ready(function() {
 
 	$('.email-button').click(function(e) {
 		e.preventDefault()
-		var email = $('.email-input').val()
+		var email = $('.email-input').val();
+
+		if (String(email) === "") {
+			$('.email-input').focus();
+			return;
+		}
+
 		var url = "https://emberjs-email-sender.herokuapp.com/handle_email?email=" + email + "&from_site=emberjs-book";
 		$('.email-button').text("Sending...");
 		$.post(url, function() {
