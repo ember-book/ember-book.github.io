@@ -655,6 +655,32 @@
 	</section> <!-- #author -->
 
 
+	<!-- Modal HTML embedded directly into document -->
+	<div id="affiliateModal" class="modal">
+		<h2 class="title">Hey!</h1>
+		<p style="margin-top: 20px">
+			It seems you're trying to learn Ember. That's awesome! ❤️
+		</p>
+		<p>
+			Unfortunately, this book hasn't been updated since Ember 2.6, and now there are better books out there for you to learn modern Ember.
+		</p>
+		<p>
+			I recommend you get yourself a copy of <a href="https://gumroad.com/a/1015788659">Rock and Roll with Ember.js</a> by Balint Erdi.
+		</p>
+		<div style="float: right">
+			<a class="button" href="https://gumroad.com/a/1015788659">
+				<div style="font-size: 16px">
+					GET A BETTER BOOK 🐹
+				</div>
+				<div style="font-size: 10px">
+					(opens Rock and Roll with Ember.js website)
+				</div>
+			</a>
+			<div>
+				<a href="#" rel="modal:close" style="float: right; font-size: 12px">Close</a>
+			</div>
+		</div>
+	</div>
 
 
 	<!-- <footer class="boxed">
@@ -688,6 +714,11 @@
 <!-- JS -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
 <script src="js/vendor/jquery.placeholder.js"></script>
 <script src="js/vendor/jquery.flexslider-min.js"></script>
 <script src="js/vendor/jquery.validate.min.js"></script>

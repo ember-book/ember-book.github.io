@@ -514,7 +514,7 @@ legend span {
 header {
   background: #ffffff;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
   min-height: 100px;
   line-height: 100px;
   position: fixed;
